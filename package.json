@@ -1,0 +1,18 @@
+{
+  "name": "saflix",
+  "version": "1.0.0",
+  "description": "Website film bioskop mirip Netflix",
+  "main": "api/index.js",
+  "scripts": {
+    "vercel-build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^112.0.0",
+    "puppeteer-core": "^21.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
