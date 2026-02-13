@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Saflix - Nonton Film Bioskop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="/" class="logo">SAFLIX</a>
+                    <div class="nav-links">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">Movies</a>
+                        <a href="#">Series</a>
+                        <a href="#">My List</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <button class="search-toggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/32x32?text=U" alt="Profile">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="search-bar hidden">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for movies, series, and more...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="heroTitle">Welcome to SAFLIX</h1>
+                <p id="heroDesc">Watch the latest movies and series online</p>
+                <button class="play-btn">Play</button>
+                <button class="info-btn">More Info</button>
+            </div>
+        </section>
+
+        <section class="movies-section">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="movie-row" id="trendingRow">
+                <!-- Movies will be loaded here -->
+                <div class="loader"></div>
+            </div>
+        </section>
+
+        <section class="movies-section">
+            <div class="section-header">
+                <h2>Recommended for You</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="movie-row" id="recommendedRow">
+                <!-- Movies will be loaded here -->
+                <div class="loader"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h3 id="modalTitle">Movie Title</h3>
+            </div>
+            <div class="modal-body">
+                <div id="videoContainer">
+                    <iframe id="videoPlayer" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
